@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenido a Mi App</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #004fab;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        nav .logo h1 {
+            font-size: 24px;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        nav .nav-links li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            padding: 80px 0;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background-color: #f9a825;
+            padding: 10px 30px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .hero .btn:hover {
+            background-color: #c17900;
+        }
+
+        /* User Section */
+        .user-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #e7e7e7;
+        }
+
+        .user-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .user-form {
+            background-color: white;
+            padding: 30px;
+            width: 300px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .user-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #004fab;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .user-form button:hover {
+            background-color: #002f6c;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Mi App</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Características</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>Bienvenido a la mejor experiencia</h2>
+            <p>Transforma tu mundo con nuestra aplicación. ¡Explora lo que tenemos para ofrecerte!</p>
+            <a href="#" class="btn">Comienza ahora</a>
+        </div>
+    </header>
+
+    <!-- User Section: Login and Register -->
+    <section class="user-section">
+        <h2>Iniciar Sesión / Registrarse</h2>
+        <div class="user-form">
+            <h3>Iniciar sesión</h3>
+            <form action="#">
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+        <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mi App. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
